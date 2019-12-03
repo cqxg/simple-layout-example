@@ -1,4 +1,57 @@
-body {
+body{
     background-image: url('./assets/download.png');
     background-repeat: no-repeat;
+}
+
+header {
+    height: 60px;
+    background: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+.logo {
+    background-image: url(./assets/logo.png);
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 34px;
+    left: 0;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_item,
+.menu_item-btn {
+    font-weight: 300;
+    top: 25px;
+    padding: 0 5px;
+    color: #1d1d1b;
+    text-decoration: none;
+}
+.menu_item-btn {
+    height: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#language li, #language ul {
+    list-style: none;
+    margin: 0;
+}
+#language a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;    
+}
+.drop_lang {
+    visibility: hidden; 
+    padding: 0;
+}
+#drop_lang li:hover ~ .drop_lang {
+    visibility: visible;
 }
