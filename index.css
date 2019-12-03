@@ -42,8 +42,17 @@ header {
 
 .menu_item-btn {
     height: 100%;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid rgb(201, 201, 201);
+    border-right: 1px solid rgb(201, 201, 201);
+    text-align: end;
+}
+
+.menu_item-btn::before {
+    content: url('./assets/man.png');
+}
+
+#language {
+    margin-left: 0;
 }
 
 #language li, #language ul {
@@ -73,7 +82,7 @@ header {
     background-color: #fcfaf4;
     margin-left: 100px;
     width: 375px;
-    height: 500px;
+    height: 545px;
 }
 
 .button-wrapper {
@@ -127,7 +136,8 @@ header {
 }
 
 .data-wrapper {
-    margin-top: 65px;
+    border-top: 1px solid rgb(209, 209, 209);
+    margin-top: 55px;
     font-size: 15px;
 
 }
@@ -145,5 +155,42 @@ header {
     color: #3b3b3b;
     font-size: 12px;
     font-weight: bold;
+}
+
+.registr {
+    background-color: #f28c18;
+    border: 1px solid #f28c18;
+    color: #fff;
+    border-radius: 2px;
+    line-height: 2.3;
+    font-weight: 700;
+    font-family: "Proxima Nova Rg";
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 15px 0px 15px;
+}
+
+.registr:hover {
+    background-color: #e6a45a;
+    transition: cubic-bezier(0,0,0,1) 0.5s;
+}
+
+.foot-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.i,
+.k {
+    color: #222222;
+    font-size: 15px;
+    margin-left: 10px;
+    vertical-align: super;
+}
+
+.i-img,
+.k-img {
+    margin-left: 15px;
 }
 
