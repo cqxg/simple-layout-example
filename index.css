@@ -1,23 +1,21 @@
 
 body {
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    display: flex;
     margin: 0 auto;
+    flex-direction: column;
 }
 
 .root {
-    background-image: url('./assets/download.png');
-    background-repeat: no-repeat;
     background-size: 100%;
+    background-repeat: no-repeat;
     font-family: "robotolight",sans-serif;
+    background-image: url('./assets/download.png');
 }
 
 header {
     height: 60px;
     background: #fff;
-    position: relative;
-    z-index: 5;
 }
 
 main {
@@ -25,26 +23,28 @@ main {
 }
 
 .logo {
-    background-image: url(./assets/logo.png);
-    background-repeat: no-repeat;
-    width: 112px;
-    height: 34px;
     left: 0;
-    position: absolute;
+    height: 34px;
+    width: 112px;
     margin-left: 100px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./assets/logo.png);
 }
 
 .menu {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
 
 .menu_item,
 .menu_item-btn {
-    font-weight: 300;
     top: 25px;
     padding: 0 5px;
-    color: #1d1d1b;
+    color: #666666;
+    font-size: 14px;
+    font-weight: bolder;
     text-decoration: none;
 }
 
@@ -55,36 +55,41 @@ main {
 
 .menu_item-btn {
     height: 100%;
+    text-align: end;
     border-left: 1px solid rgb(201, 201, 201);
     border-right: 1px solid rgb(201, 201, 201);
-    text-align: end;
 }
 
 .menu_item-btn::before {
     content: url('./assets/man.png');
 }
 
-#language {
-    margin-left: 0;
-}
-
 #language li, #language ul {
+    padding: 0 5px;
+    color: #666666;
     list-style: none;
     margin: 0;
 }
 
 #language a {
+    padding: 0 5px;
+    color: #666666;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;    
 }
 
 .drop_lang {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #666666;
     visibility: hidden; 
     padding: 0;
 }
 
 #drop_lang li:hover ~ .drop_lang {
+    color: #666666;
     visibility: visible;
 }
 
