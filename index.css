@@ -89,7 +89,7 @@ main {
 }
 
 
-.content_wrapper {
+.card_wrapper {
     display: flex;
     flex-direction: column;
     background-color: #fcfaf4;
@@ -98,7 +98,7 @@ main {
     height: 550px;
 }
 
-.button-wrapper {
+.card_button-wrapper {
     display: flex;
 }
 
@@ -116,10 +116,10 @@ main {
     transition: cubic-bezier(0,0,0,1) 1s;
 }
 
-.summa-wrapper,
-.lkmenesa-wrapper,
-.atnaksas-wrapper,
-.gpl-wrapper {
+.card_summa-wrapper,
+.card_lkmenesa-wrapper,
+.card_atnaksas-wrapper,
+.card_gpl-wrapper {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
@@ -144,11 +144,11 @@ main {
     width: 310px;
 }
 
-.input_one-wrapper {
+.card_input-wrapper {
     margin-top: 20px;
 }
 
-.data-wrapper {
+.card_data-wrapper {
     border-top: 1px solid rgb(209, 209, 209);
     margin-top: 55px;
     font-size: 15px;
