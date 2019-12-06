@@ -1,6 +1,15 @@
+
 body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.root {
     background-image: url('./assets/download.png');
     background-repeat: no-repeat;
+    background-size: 100%;
     font-family: "robotolight",sans-serif;
 }
 
@@ -9,6 +18,10 @@ header {
     background: #fff;
     position: relative;
     z-index: 5;
+}
+
+main {
+    height: 100vh;
 }
 
 .logo {
@@ -82,7 +95,7 @@ header {
     background-color: #fcfaf4;
     margin-left: 100px;
     width: 375px;
-    height: 545px;
+    height: 550px;
 }
 
 .button-wrapper {
