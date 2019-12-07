@@ -343,3 +343,41 @@ input[type=range]:focus::-ms-fill-upper {
     margin-left: 15px;
 }
 
+
+@media (max-width: 930px) {
+    body {
+        width: 100%;
+    }
+
+    .root {
+        background: unset;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        position: unset;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .card_wrapper {
+        margin: 70px auto;
+        width: 355px;
+    }
+
+}
+
+@media (max-width: 710px) {
+    .navigation {
+        max-width: 200px;
+        text-align: center;
+    }
+}
