@@ -101,9 +101,22 @@ a {
     opacity: 1;
 }
 
+.login {
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    border-right: 1px solid rgb(200, 200, 200);
+    border-left: 1px solid rgb(200, 200, 200);
+}
+
+.login_icon {
+    margin: 0px 5px -2px 0;
+}
+
 .lang_icon {
     vertical-align: middle;
 }
+
 
 
 
