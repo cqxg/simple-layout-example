@@ -35,15 +35,15 @@ main {
 }
 
 ul {
-    list-style: none; 
     margin: 0;
     padding: 0;
+    list-style: none; 
 }
 
 .topmenu > li {
-    display: inline-block;
     margin-right: 20px;
     position: relative;
+    display: inline-block;
 }
 
 .topmenu > li:last-child {
@@ -51,12 +51,12 @@ ul {
 }
 
 a {
+    outline: none;
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-    outline: none;
-    font-family: 'Lora', serif;
     transition: .5s linear;
+    font-family: 'Lora', serif;
 }
 
 .fa {
@@ -66,11 +66,11 @@ a {
 }
 
 .submenu {
-    position: absolute;
-    top: 100%;
     left: 0;
-    width: 100%;
+    top: 100%;
     z-index: 10;
+    width: 100%;
+    position: absolute;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
@@ -82,8 +82,8 @@ a {
 }
 
 .navigation ul a {
-    color: #666666;
     font-size: 14px;
+    color: #666666;
 }
 
 .navigation ul a:hover {
@@ -92,13 +92,13 @@ a {
 }
 
 .navigation .submenu {
-    visibility: hidden;
     opacity: 0;
+    visibility: hidden;
 }
 
 .navigation ul li:hover .submenu {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
 }
 
 .login {
@@ -110,10 +110,10 @@ a {
 }
 
 .login:hover {
-    border-right: 1px solid rgb(200, 200, 200);
-    border-left: 1px solid rgb(200, 200, 200);
     background-color: #fff8f0b7;
     transition: cubic-bezier(0,0,0,1) 0.5s;
+    border-right: 1px solid rgb(200, 200, 200);
+    border-left: 1px solid rgb(200, 200, 200);
 }
 
 .login_icon {
@@ -126,12 +126,12 @@ a {
 
 
 .card_wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: #fcfaf4;
-    margin-left: 100px;
     width: 375px;
     height: 550px;
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    background-color: #fcfaf4;
     -webkit-box-shadow: 0px 7px 5px 0px rgba(60, 50, 0, 0.30);
     -moz-box-shadow: 0px 7px 5px 0px rgba(60, 50, 0, 0.30);
     box-shadow: 0px 7px 5px 0px rgba(60, 50, 0, 0.30);
@@ -150,8 +150,8 @@ a {
 }
 
 .btn:hover {
-    background-color: #fcfaf4;
     color: #313131;
+    background-color: #fcfaf4;
     transition: cubic-bezier(0,0,0,1) 1s;
 }
 
@@ -160,19 +160,19 @@ a {
 .card_atnaksas-wrapper,
 .card_gpl-wrapper {
     display: flex;
-    flex-direction: row;
     margin-top: 15px;
+    flex-direction: row;
 }
 
 .summa {
     flex-grow: 9;
-    margin-left: 20px;
     margin-top: 10px;
+    margin-left: 20px;
     color: #3b3b3b;
 }
 
 input[type=range] {
-    width: 100%;
+    width: 75%;
     -webkit-appearance: none;
 }
 
@@ -181,25 +181,25 @@ input[type=range]:focus {
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
+    width: 75%;
     height: 5px;
     cursor: pointer;
     border-radius: 1.3px;
     background: #f28c18;
-    border: 0.2px solid #010101;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 0.1px solid #707070;
+    box-shadow: 1px 1px 1px #707070, 0px 0px 1px #707070;
 }
 
 input[type=range]::-webkit-slider-thumb {
-    height: 25px;
+    height: 22px;
     width: 15px;
     cursor: pointer;
     border-radius: 3px;
     margin-top: -10px;
     background: #ffffff;
     -webkit-appearance: none;
-    border: 1px solid #000000;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #707070;
+    box-shadow: 1px 1px 1px #707070, 0px 0px 1px #707070;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
@@ -212,22 +212,22 @@ input[type=range]::-moz-range-track {
     cursor: pointer;
     border-radius: 1.3px;
     background: #f28c18;;
-    border: 0.2px solid #010101;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 0.2px solid #707070;
+    box-shadow: 1px 1px 1px #707070, 0px 0px 1px #707070;
 
 }
   input[type=range]::-moz-range-thumb {
-    height: 25px;
+    height: 22px;
     width: 15px;
     cursor: pointer;
     border-radius: 3px;
     background: #ffffff;
-    border: 1px solid #000000;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #707070;
+    box-shadow: 1px 1px 1px #707070, 0px 0px 1px #707070;
 }
 
 input[type=range]::-ms-track {
-    width: 100%;
+    width: 75%;
     height: 5px;
     cursor: pointer;
     color: transparent;
@@ -239,25 +239,25 @@ input[type=range]::-ms-track {
 input[type=range]::-ms-fill-lower {
     border-radius: 2.6px;
     background: #f28c18;
-    border: 0.2px solid #010101;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 0.2px solid #707070;
+    box-shadow: 1px 1px 1px #707070, 0px 0px 1px #707070;
 }
 
 input[type=range]::-ms-fill-upper {
-    background: #f28c18;
-    border: 0.2px solid #010101;
     border-radius: 2.6px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #f28c18;
+    border: 0.2px solid #707070;
+    box-shadow: 1px 1px 1px #707070, 0px 0px 1px #707070;
 }
 
 input[type=range]::-ms-thumb {
-    height: 36px;
-    width: 16px;
+    width: 15px;
+    height: 22px;
     cursor: pointer;
     border-radius: 3px;
     background: #ffffff;
-    border: 1px solid #000000;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #707070;
+    box-shadow: 1px 1px 1px #707070, 0px 0px 1px #707070;
 }
 
 input[type=range]:focus::-ms-fill-lower {
@@ -283,39 +283,39 @@ input[type=range]:focus::-ms-fill-upper {
 
 .card_input-wrapper {
     margin-top: 20px;
+    text-align: center;
 }
 
 .card_data-wrapper {
-    border-top: 1px solid rgb(209, 209, 209);
-    margin-top: 55px;
     font-size: 15px;
-
+    margin-top: 55px;
+    border-top: 1px solid rgb(209, 209, 209);
 }
 
 .numbers {
-    font-weight: bold;
     flex-grow: 1;
+    font-weight: bold;
 }
 
 .lkmenesa,
 .atnaksas,
 .gpl {
     flex-grow: 9;
-    margin-left: 20px;
-    color: #3b3b3b;
     font-size: 12px;
     font-weight: bold;
+    color: #3b3b3b;
+    margin-left: 20px;
 }
 
 .registr {
-    background-color: #f28c18;
-    border-radius: 2px;
     color: #fff;
     font-weight: 700;
-    font-family: "Proxima Nova Rg";
+    border-radius: 2px;
     text-align: center;
     text-decoration: none;
-    margin: 15px 15px 0px 15px;
+    margin: 20px 15px 0px 15px;
+    background-color: #f28c18;
+    font-family: "Proxima Nova Rg";
 }
 
 .registr:hover {
@@ -325,16 +325,16 @@ input[type=range]:focus::-ms-fill-upper {
 
 .foot-wrapper {
     display: flex;
+    margin-top: 30px;
     flex-direction: column;
-    margin-top: 10px;
 }
 
 .i,
 .k {
-    display: initial;
-    color: #222222;
     font-size: 15px;
     margin-left: 10px;
+    display: initial;
+    color: #222222;
     vertical-align: super;
 }
 
