@@ -1,4 +1,3 @@
-
 body {
     width: 100%;
     display: flex;
@@ -14,12 +13,15 @@ body {
 }
 
 header {
-    height: 60px;
+    display: flex;
     background: #fff;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 main {
-    height: 100vh;
+    margin-top: 30px;
+    height: calc(100vh - 35px);
 }
 
 .logo {
@@ -32,13 +34,86 @@ main {
     background-image: url(./assets/logo.png);
 }
 
-.menu {
+ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.topmenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.topmenu > li:last-child {
+    margin-right: 0;
+}
+
+a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Lora', serif;
+    transition: .5s linear;
+}
+
+.fa {
+    font-family: "FontAwesome";
+    color: inherit;
+    padding-left: 10px;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.navigation {
+    margin-right: 20px;
+}
+
+.navigation ul a {
+    color: #666666;
+    font-size: 14px;
+}
+
+.navigation ul a:hover {
+    color: #f18815;
+    transition: cubic-bezier(0,0,0,1) 0.5s;
+}
+
+.navigation .submenu {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navigation ul li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lang_icon {
+    vertical-align: middle;
+}
+
+
+
+/* .menu {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
+} */
 
-.menu_item,
+/* .menu_item,
 .menu_item-btn {
     top: 25px;
     padding: 0 5px;
@@ -63,6 +138,12 @@ main {
 .menu_item-btn::before {
     content: url('./assets/man.png');
 }
+
+#language {
+    display: inline;
+
+}
+
 
 #language li, #language ul {
     padding: 0 5px;
@@ -91,7 +172,7 @@ main {
 #drop_lang li:hover ~ .drop_lang {
     color: #666666;
     visibility: visible;
-}
+} */
 
 
 .card_wrapper {
@@ -201,6 +282,7 @@ main {
 
 .i,
 .k {
+    display: initial;
     color: #222222;
     font-size: 15px;
     margin-left: 10px;
