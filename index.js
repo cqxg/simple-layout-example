@@ -8,6 +8,9 @@ const App = () => {
     const plus = document.querySelector('#plus');
     const minusTwo = document.querySelector('#minus-two');
     const plusTwo = document.querySelector('#plus-two');
+    const registr = document.querySelector('.registr');
+    const modalOverlay = document.querySelector("#modal-overlay");
+    const closeButton = document.querySelector("#close-button");
 
     summa.disabled = true;
     lorem.disabled = true;
@@ -60,6 +63,16 @@ const App = () => {
         };
     };
 
+    const registrHandler = () => {
+        modal.classList.toggle("open");
+        modalOverlay.classList.toggle("open");
+    };
+
+    const closeHandler = () => {
+        modal.classList.toggle("open");
+        modalOverlay.classList.toggle("open");
+    };
+
 
 
     inputOne.addEventListener('change', inputOneHandler);
@@ -68,7 +81,8 @@ const App = () => {
     minusTwo.addEventListener('click', minusTwoHandler);
     plus.addEventListener('click', plusHandler);
     plusTwo.addEventListener('click', plusTwoHandler);
-
+    registr.addEventListener('click', registrHandler);
+    closeButton.addEventListener('click', closeHandler);
 };
 
 document.addEventListener("DOMContentLoaded", App);
