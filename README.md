@@ -1,1 +1,2 @@
   A small layout example, which you can see at the link:  https://cqxg.github.io/simple-layout-example/  
+  This is just an example. It does not carry a semantic load and was not supposed to do something over functional ;)
