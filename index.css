@@ -110,7 +110,7 @@ a {
 }
 
 .login:hover {
-    background-color: #fff8f0b7;
+    background-color: #d6dadc;
     transition: cubic-bezier(0,0,0,1) 0.5s;
     border-right: 1px solid rgb(200, 200, 200);
     border-left: 1px solid rgb(200, 200, 200);

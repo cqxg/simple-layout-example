@@ -9,6 +9,9 @@ const App = () => {
     const minusTwo = document.querySelector('#minus-two');
     const plusTwo = document.querySelector('#plus-two');
 
+    summa.disabled = true;
+    lorem.disabled = true;
+
     const state = {
         currentSumma: '',
         currentLorem: ''
