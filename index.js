@@ -9,8 +9,10 @@ const App = () => {
     const minusTwo = document.querySelector('#minus-two');
     const plusTwo = document.querySelector('#plus-two');
     const registr = document.querySelector('.registr');
-    const modalOverlay = document.querySelector("#modal-overlay");
-    const closeButton = document.querySelector("#close-button");
+    const modalOverlay = document.querySelector('#modal-overlay');
+    const closeButton = document.querySelector('#close');
+    const login = document.querySelector('.login');
+
 
     summa.disabled = true;
     lorem.disabled = true;
@@ -82,6 +84,7 @@ const App = () => {
     plus.addEventListener('click', plusHandler);
     plusTwo.addEventListener('click', plusTwoHandler);
     registr.addEventListener('click', registrHandler);
+    login.addEventListener('click', registrHandler)
     closeButton.addEventListener('click', closeHandler);
 };
 
